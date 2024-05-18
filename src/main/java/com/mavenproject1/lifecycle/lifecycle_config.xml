@@ -13,4 +13,8 @@ http://www.springframework.org/schema/context/spring-context.xsd">
 	<property name="price" value="10" />
 </bean>
 
+<bean class="com.mavenproject1.lifecycle.Pepsi" name="p1">
+	<property name="price" value="20"/>	
+</bean>
+
 </beans>
