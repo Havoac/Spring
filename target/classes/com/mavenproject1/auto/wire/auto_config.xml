@@ -15,7 +15,7 @@
 
 <!--  byName and byType runs the setter functions  -->
 
-<!--  byName : Whenever it will create the object of this class, it will search for the name of the variable(address) in the config. So the name of the bean which is dependent and the name of the reference variable should be same  -->
+<!--  byName : Whenever it will create the object of this class, it will search for the name of the variable(address) in the config. So the name of the bean which is dependent and the name of the reference variable should be same otherwise it takes null.  -->
 <bean class="com.mavenproject1.auto.wire.Emp" name="emp1" autowire="byName" />
 
 <!--  byType : Whenever it will create the object of this class, it will search by the type of the variable in the config (type of variable address is Address, so if the class Address bean is in the config. It will take that). However there is a problem with it. If the class Address has multiple beans in the config, it will throw an exception  -->
