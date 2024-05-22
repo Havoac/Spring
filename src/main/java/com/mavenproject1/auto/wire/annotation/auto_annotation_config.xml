@@ -11,9 +11,15 @@
 <!--uses type autowiring-->
 <context:annotation-config />
 
-<bean class="com.mavenproject1.auto.wire.annotation.Address" name="address" >
+<!-- uses autowire:byType --> 
+<bean class="com.mavenproject1.auto.wire.annotation.Address" name="address1" >
 	<property name="street" value="ADA" />
 	<property name="city" value="Prayagraj" />
+</bean>
+
+<bean class="com.mavenproject1.auto.wire.annotation.Address" name="address2" >
+	<property name="street" value="ADA" />
+	<property name="city" value="Delhi" />
 </bean>
 
 <bean class="com.mavenproject1.auto.wire.annotation.Emp" name="emp1" />
