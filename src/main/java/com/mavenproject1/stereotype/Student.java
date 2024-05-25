@@ -3,9 +3,11 @@ package com.mavenproject1.stereotype;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component 			// if we want the bean object name(student) to be something else, then use @Component("object name")
+@Component 			// If we want the bean object name(student) to be something else, then use @Component("object name")
+@Scope("prototype")			// The copy of the objects will not be used, every time a new object will be created. If prototype is not used, then by default the scope will be singleton (the copy of the object that was initially created will be used)
 public class Student {
 	/* Value annotation is to give value to the fields */ 
 	

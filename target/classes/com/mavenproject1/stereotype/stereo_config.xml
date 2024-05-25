@@ -17,4 +17,7 @@ http://www.springframework.org/schema/util/spring-util.xsd">
 	<value>Prayagraj</value>
 </util:list>
 
+<!-- prototype scope is used. so the hashcode will be different if multiple objects of this class is created -->
+<bean class="com.mavenproject1.stereotype.Teacher" name="teacher" scope="prototype" />
+
 </beans>
