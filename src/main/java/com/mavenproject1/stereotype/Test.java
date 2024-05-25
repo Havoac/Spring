@@ -11,6 +11,7 @@ public class Test {
 		Student s = context.getBean("student", Student.class);		// student in context.getBean is the object name even though there is no such bean in the XML file. It takes the class name as bean object removing the upper camel case 
 		
 		System.out.println(s);
+		System.out.println(s.getAddresses());
 	}
 
 }
